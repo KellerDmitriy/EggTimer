@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		E186CA6429E7EA7800EFA4FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E186CA6329E7EA7800EFA4FC /* AppDelegate.swift */; };
 		E186CA6629E7EA7800EFA4FC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E186CA6529E7EA7800EFA4FC /* SceneDelegate.swift */; };
-		E186CA6829E7EA7800EFA4FC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E186CA6729E7EA7800EFA4FC /* ViewController.swift */; };
+		E186CA6829E7EA7800EFA4FC /* EggTimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E186CA6729E7EA7800EFA4FC /* EggTimerViewController.swift */; };
 		E186CA6B29E7EA7800EFA4FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E186CA6929E7EA7800EFA4FC /* Main.storyboard */; };
 		E186CA6D29E7EA7800EFA4FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E186CA6C29E7EA7800EFA4FC /* Assets.xcassets */; };
 		E186CA7029E7EA7800EFA4FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E186CA6E29E7EA7800EFA4FC /* LaunchScreen.storyboard */; };
+		E186CA7A29E7FB9500EFA4FC /* alarm_sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E186CA7929E7FB9500EFA4FC /* alarm_sound.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E186CA6029E7EA7800EFA4FC /* EggTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EggTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E186CA6329E7EA7800EFA4FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E186CA6529E7EA7800EFA4FC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E186CA6729E7EA7800EFA4FC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E186CA6729E7EA7800EFA4FC /* EggTimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EggTimerViewController.swift; sourceTree = "<group>"; };
 		E186CA6A29E7EA7800EFA4FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E186CA6C29E7EA7800EFA4FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E186CA6F29E7EA7800EFA4FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E186CA7129E7EA7800EFA4FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E186CA7929E7FB9500EFA4FC /* alarm_sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = alarm_sound.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,32 @@
 		E186CA6229E7EA7800EFA4FC /* EggTimer */ = {
 			isa = PBXGroup;
 			children = (
-				E186CA6329E7EA7800EFA4FC /* AppDelegate.swift */,
-				E186CA6529E7EA7800EFA4FC /* SceneDelegate.swift */,
-				E186CA6729E7EA7800EFA4FC /* ViewController.swift */,
-				E186CA6929E7EA7800EFA4FC /* Main.storyboard */,
+				E186CA6729E7EA7800EFA4FC /* EggTimerViewController.swift */,
+				E186CA7829E7EACC00EFA4FC /* Storyboards */,
+				E186CA7729E7EA9A00EFA4FC /* App */,
 				E186CA6C29E7EA7800EFA4FC /* Assets.xcassets */,
-				E186CA6E29E7EA7800EFA4FC /* LaunchScreen.storyboard */,
-				E186CA7129E7EA7800EFA4FC /* Info.plist */,
+				E186CA7929E7FB9500EFA4FC /* alarm_sound.mp3 */,
 			);
 			path = EggTimer;
+			sourceTree = "<group>";
+		};
+		E186CA7729E7EA9A00EFA4FC /* App */ = {
+			isa = PBXGroup;
+			children = (
+				E186CA6329E7EA7800EFA4FC /* AppDelegate.swift */,
+				E186CA6529E7EA7800EFA4FC /* SceneDelegate.swift */,
+				E186CA7129E7EA7800EFA4FC /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		E186CA7829E7EACC00EFA4FC /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				E186CA6929E7EA7800EFA4FC /* Main.storyboard */,
+				E186CA6E29E7EA7800EFA4FC /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +146,7 @@
 			files = (
 				E186CA7029E7EA7800EFA4FC /* LaunchScreen.storyboard in Resources */,
 				E186CA6D29E7EA7800EFA4FC /* Assets.xcassets in Resources */,
+				E186CA7A29E7FB9500EFA4FC /* alarm_sound.mp3 in Resources */,
 				E186CA6B29E7EA7800EFA4FC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,7 +158,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E186CA6829E7EA7800EFA4FC /* ViewController.swift in Sources */,
+				E186CA6829E7EA7800EFA4FC /* EggTimerViewController.swift in Sources */,
 				E186CA6429E7EA7800EFA4FC /* AppDelegate.swift in Sources */,
 				E186CA6629E7EA7800EFA4FC /* SceneDelegate.swift in Sources */,
 			);
@@ -289,12 +309,12 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = KYB528F2CP;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = EggTimer/Info.plist;
+				INFOPLIST_FILE = EggTimer/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,9 +322,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = keller.EggTimer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -317,12 +340,12 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = KYB528F2CP;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = EggTimer/Info.plist;
+				INFOPLIST_FILE = EggTimer/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -330,9 +353,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = keller.EggTimer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
